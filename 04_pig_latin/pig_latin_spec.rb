@@ -69,4 +69,14 @@ describe "#translate" do
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
 
+  xit "capitalized words are still capitalized" do
+    s = translate("Hello how are you")
+    expect(s).to eq("Ellohay owhay areay youay")
+  end
+
+  xit "retain the punctuation from the original phrase" do
+    s = translate("Hello, how are you?")
+    expect(s).to eq("Ellohay, owhay areay youay?")
+  end
+
 end
